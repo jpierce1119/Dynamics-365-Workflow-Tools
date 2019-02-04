@@ -86,10 +86,10 @@ namespace msdyncrmWorkflowTools
 
         public void DeleteRecordAuditHistory(string logicalName, string id)
         {
-            DeleteRecordChangeHistoryRequest delRequest = new DeleteRecordChangeHistoryRequest();
-            EntityReference objt= new EntityReference(logicalName,new Guid(id));
-            delRequest.Target = objt;
-            service.Execute(delRequest);
+            //DeleteRecordChangeHistoryRequest delRequest = new DeleteRecordChangeHistoryRequest();
+            //EntityReference objt= new EntityReference(logicalName,new Guid(id));
+            //delRequest.Target = objt;
+            //service.Execute(delRequest);
         }
 
         public EntityReference retrieveUserBUDefaultTeam(string systemuserid)
